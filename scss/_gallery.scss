@@ -1,0 +1,50 @@
+.gallery {
+	padding: 90px 0 50px;
+
+	background-image: url(../images/gallery-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	&__heading-box {
+		margin: 0 0 46px;
+
+		color: #fff;
+	}
+	&__list {
+		@include reset-list;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 0 0 -34px;
+	}
+	&__item {
+		width: 344px;
+		height: 209px;
+		margin: 0 0 39px 34px;
+		&-img {
+			display: block;
+			width: 344px;
+			height: 209px;
+
+			object-fit: cover;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.gallery {
+		padding: 40px 0 0;
+	}
+}
+
+@media (max-width: 470px) {
+	.gallery {
+		&__item {
+			width: 280px;
+			&-img {
+				width: 280px;
+			}
+		}
+	}
+}

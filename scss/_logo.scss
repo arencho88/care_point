@@ -1,0 +1,63 @@
+.logo {
+	padding: 0 0 0 48px;
+
+	background-image: url(../images/icons/logo.svg);
+	background-repeat: no-repeat;
+	background-size: 44px 39px;
+	background-position: 0 50%;
+	&__text {
+		margin: 0;
+
+		font-family: 'Montserrat';
+		font-size: 32px;
+		font-weight: 800;
+		&-care {
+			display: inline-block;
+
+			color: #1a9bdc;
+		}
+		&-point {
+			display: inline-block;
+			margin: 0 0 0 -10px;
+
+			color: #494848;
+		}
+		&-doc {
+			display: block;
+
+			font-size: 14px;
+			line-height: normal;
+			font-weight: 400;
+			color: #282828;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 4.5px;
+		}
+	}
+}
+
+
+@media (max-width: 992px) {
+	.logo {
+		background-size: 40px auto;
+		&__text {
+			font-size: 28px;
+			&-doc {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.logo {
+		margin: 0 0 20px;
+		&__text {
+			font-size: 24px;
+			line-height: 28px;
+			&-doc {
+				font-size: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+html{
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+body {
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+
+	font-family: 'OpenSans', sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #000;
+
+	background-color: #fff;
+}
+.visually-hidden:not(:focus):not(:active), 
+input[type="checkbox"].visually-hidden, 
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+// Кнопка ==================/
+.btn {
+	display: block;
+	border: none;
+	padding: 13px 30px;
+	border-radius: 29px;
+
+	font-family: 'Lato';
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+
+	background-color: $blue;
+	box-shadow: -4px 12px 40px 0px rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+
+	@media (max-width: 570px) {
+		padding: 10px 20px;
+
+		font-size: 16px;
+	}
+}
+// =========================/
+
+// Блок с загаловком =======/
+.heading-box {
+	color: #494949;
+	text-align: center;
+	&__title {
+		margin: 0 0 21px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-size: 45px;
+		font-weight: 700;
+		line-height: normal;
+		@media (max-width: 992px) {
+			margin: 0 0 15px;
+
+			font-size: 38px;
+		}
+		@media (max-width: 660px) {
+			font-size: 32px;
+		}
+		@media (max-width: 660px) {
+			font-size: 28px;
+		}
+	}
+	&__text {
+		margin: 0;
+	}
+}
+// =========================/
+
+// Флекс-контейнер =========/
+.flexbox {
+	display: flex;
+}

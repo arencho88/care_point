@@ -1,0 +1,74 @@
+.plan {
+	background-color: #e5e9f2;
+	background-image: url(../images/plan-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	&__inner {
+		max-width: 580px;
+		margin: 0 0 0 42px;
+		padding: 166px 0 180px;
+
+		text-align: center;
+	}
+	&__slogan {
+		display: block;
+		margin: 0 0 35px;
+
+		font-family: "Montserrat";
+		font-size: 48px;
+		line-height: normal;
+		font-weight: 500;
+		color: #474747;
+	}
+	&__text {
+		margin: 0 0 42px;
+
+		font-size: 17px;
+		color: #3f3f3f;
+	}
+	&__btn {
+		margin: 0 auto;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.plan {
+		&__inner {
+			margin: 0;
+			padding: 100px 0 100px;
+		}
+		&__slogan {
+			font-size: 38px;
+		}
+	}
+}
+
+@media (max-width: 660px) {
+	.plan {
+		&__inner {
+			padding: 60px 0 100px;
+		}
+		&__slogan {
+			font-size: 32px;
+		}
+	}
+}
+
+@media (max-width: 570px) {
+	.plan {
+		background-image: none;
+		&__inner {
+			padding: 30px 0 30px;
+		}
+		&__slogan {
+			margin: 0 0 20px;
+
+			font-size: 28px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
