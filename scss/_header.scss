@@ -14,7 +14,7 @@
 		flex-grow: 1;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		max-width: 800px;
+		max-width: 784px;
 
 		color: $grey;
 	}
@@ -91,11 +91,11 @@
 		margin: 0 0 0 -26px;
 	}
 	&__nav-item {
-		margin: 0 0 0 26px;
+		margin: 0 0 0 22px;
 	}
 	&__nav-link {
-		font-family: 'NexaBold';
 		font-size: 20px;
+		font-weight: 600;
 		color: $grey;
 		text-decoration: none;
 	}
@@ -106,6 +106,7 @@
 	}
 	&__nav-item--current {
 		.header__nav-link {
+			font-weight: bold;
 			color: #262626;
 		}
 	}
@@ -211,8 +212,15 @@
 @media (max-width: 660px) {
 	.header {
 		&__contacts-item {
-			width: 50%;
-			margin: 0 0 15px;
+			width: 100%;
+			margin: 0 0 5px;
+			padding: 4px 0 4px 40px;
+			&::before {
+				width: 30px;
+				height: 30px;
+
+				background-size: 20px auto;
+			}
 		}
 	}
 }
@@ -314,20 +322,6 @@
 	}
 }
 
-@media (max-width: 570px) {
-	.header {
-		&__contacts-item {
-			width: 100%;
-			margin: 0 0 5px;
-			padding: 4px 0 4px 40px;
-			&::before {
-				width: 30px;
-				height: 30px;
 
-				background-size: 20px auto;
-			}
-		}
-	}
-}
 
 

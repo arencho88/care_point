@@ -83,12 +83,12 @@
 		@include reset-list;
 	}
 	&__links {
-		width: 132px;
+		width: 198px;
 		margin: 0 0 0 60px;
 	}
 	&__services {
-		width: 190px;
-		margin: 0 0 0 144px;
+		width: 196px;
+		margin: 0 0 0 77px;
 	}
 	&__item {
 		display: block;
@@ -169,7 +169,7 @@
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1070px) {
 	.footer {
 		padding: 60px 0 0;
 		&__links,
@@ -184,13 +184,13 @@
 		&__soc {
 			display: flex;
 			align-items: flex-end;
-			width: 29%;
+			justify-content: flex-end;
 			margin: 0 0 28px;
 		}
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
 	.footer {
 		&__inner {
 			justify-content: space-around;
@@ -211,6 +211,9 @@
 		&__form,
 		&__soc {
 			width: 100%;
+		}
+		&__soc {
+			justify-content: start;
 		}
 	}
 }
